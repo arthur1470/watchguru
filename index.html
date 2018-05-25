@@ -186,20 +186,40 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
+                        <button data-dismiss="modal" class="close">
+                            <span>&times;</span>
+                        </button>
                         <h4 class="modal-title">Nova Ordem de Serviço</h4>
                     </div>
                     <form>
                         <div class="modal-body">
+                            <div class="alert alert-danger">
+                                <button data-dismiss="alert" class="close"><span>&times;</span></button>
+                                Ocorreu um erro!
+                            </div>
+                            <div class="alert alert-success">
+                                <button data-dismiss="alert" class="close"><span>&times;</span></button>
+                                Sucesso!
+                            </div>
+                            <div class="alert alert-warning">
+                                <button data-dismiss="alert" class="close"><span>&times;</span></button>
+                                Presta atenção aí!
+                            </div>
+                            <div class="alert alert-info">
+                                <button data-dismiss="alert" class="close"><span>&times;</span></button>
+                                <b>Info. </b>O banheiro fica à esquerda. <-
+                            </div>
+
                             <div class="row">
                                 <div class="form-group col-xs-12">
-                                    <label>Código da OS</label>
+                                    <label class="control-label">Código da OS</label>
                                     <p class="form-control-static">83290</p>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="form-group col-sm-5">
-                                    <label for="Cliente">Cliente</label>
+                                    <label class="control-label" for="Cliente">Cliente</label>
                                     <select id="Cliente" class="form-control">
                                         <option value="">Selecione...</option>
                                         <option value="1">Frodo Bolseiro</option>
@@ -208,8 +228,8 @@
                                     </select>
                                 </div>
                                 
-                                <div class="form-group col-sm-7">
-                                    <label for="Servicos">Serviços</label>
+                                <div class="form-group col-sm-7 has-warning">
+                                    <label class="control-label" for="Servicos">Serviços</label>
                                     <select id="Servicos" class="form-control">
                                         <option value="">Selecione...</option>
                                         <option value="1">Ajuste de Data/Hora</option>
@@ -220,15 +240,15 @@
                             </div>
 
                             <div class="row">
-                                <div class="form-group col-xs-12">
-                                    <label for="Observacao">Observação</label>
+                                <div class="form-group col-xs-12 has-error">
+                                    <label class="control-label" for="Observacao">Observação</label>
                                     <textarea id="Observacao" class="form-control" rows="3"></textarea>
                                 </div>
                             </div>
 
                             <div class="row">
-                                <div class="form-group col-sm-4">
-                                    <label for="Valor">Valor</label>
+                                <div class="form-group col-sm-4 has-success">
+                                    <label class="control-label" for="Valor">Valor</label>
                                     <div class="input-group">
                                         <div class="input-group-addon"><span class="glyphicon glyphicon-usd"></span></div>
                                         <input type="text" id="Valor" class="form-control" />
